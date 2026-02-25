@@ -1,0 +1,18 @@
+{
+  "scenario_id": "05_partial_apply_state_issues",
+  "name": "Partial Apply / State Issues",
+  "category": "state_integrity",
+  "severity": "HIGH",
+  "blast_radius": {
+    "monolithic": "CRITICAL",
+    "small_composable": "MEDIUM",
+    "domain_based": "MEDIUM",
+    "layer_based": "LOW",
+    "workspace_based": "CRITICAL",
+    "state_per_stack": "LOW"
+  },
+  "detection_method": "state_vs_aws_comparison",
+  "affected_resources": ["potentially_all_resources_in_state"],
+  "requires_aws_credentials": true,
+  "remediation": "terraform plan && terraform apply (or terraform import for orphaned resources)"
+}

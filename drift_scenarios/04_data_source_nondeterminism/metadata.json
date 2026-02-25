@@ -1,0 +1,18 @@
+{
+  "scenario_id": "04_data_source_nondeterminism",
+  "name": "Data Source Nondeterminism",
+  "category": "nondeterminism",
+  "severity": "MEDIUM",
+  "blast_radius": {
+    "monolithic": "MEDIUM",
+    "small_composable": "LOW",
+    "domain_based": "LOW",
+    "layer_based": "MEDIUM",
+    "workspace_based": "MEDIUM",
+    "state_per_stack": "LOW"
+  },
+  "detection_method": "consecutive_plan_comparison",
+  "affected_resources": ["data_sources_using_most_recent", "resources_referencing_volatile_data"],
+  "requires_aws_credentials": true,
+  "remediation": "Pin data source queries; use explicit resource IDs instead of data source lookups"
+}

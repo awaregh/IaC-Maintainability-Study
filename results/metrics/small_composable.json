@@ -1,0 +1,20 @@
+{
+  "variant": "small_composable",
+  "measured_at": "2026-02-25T07:24:16Z",
+  "source_path": "infra/reference_systems/small_composable",
+  "metrics": {
+    "total_loc": 1229,
+    "resource_blocks": 44,
+    "module_calls": 6,
+    "module_count": 6,
+    "data_blocks": 2,
+    "variable_count": 57,
+    "output_count": 34,
+    "reuse_ratio": 0.1200,
+    "coupling_score": 2.2222,
+    "graph_nodes": 0,
+    "graph_edges": 0,
+    "graph_available": false,
+    "estimated_change_surface": 7.33
+  }
+}

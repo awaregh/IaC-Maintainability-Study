@@ -1,0 +1,18 @@
+{
+  "scenario_id": "03_provider_default_drift",
+  "name": "Provider Default Drift",
+  "category": "provider_evolution",
+  "severity": "MEDIUM",
+  "blast_radius": {
+    "monolithic": "HIGH",
+    "small_composable": "LOW",
+    "domain_based": "LOW",
+    "layer_based": "LOW",
+    "workspace_based": "HIGH",
+    "state_per_stack": "LOW"
+  },
+  "detection_method": "terraform_plan_after_provider_upgrade",
+  "affected_resources": ["aws_s3_bucket", "aws_s3_bucket_ownership_controls"],
+  "requires_aws_credentials": true,
+  "remediation": "Update Terraform code to explicitly set the previously-defaulted attribute"
+}

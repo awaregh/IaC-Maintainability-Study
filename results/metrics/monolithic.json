@@ -1,0 +1,20 @@
+{
+  "variant": "monolithic",
+  "measured_at": "2026-02-25T07:24:16Z",
+  "source_path": "infra/reference_systems/monolithic",
+  "metrics": {
+    "total_loc": 869,
+    "resource_blocks": 43,
+    "module_calls": 0,
+    "module_count": 0,
+    "data_blocks": 2,
+    "variable_count": 16,
+    "output_count": 13,
+    "reuse_ratio": 0.0000,
+    "coupling_score": 2.0000,
+    "graph_nodes": 0,
+    "graph_edges": 0,
+    "graph_available": false,
+    "estimated_change_surface": 43
+  }
+}
