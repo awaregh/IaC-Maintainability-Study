@@ -1,0 +1,18 @@
+{
+  "scenario_id": "02_version_drift",
+  "name": "Version Drift",
+  "category": "versioning",
+  "severity": "MEDIUM",
+  "blast_radius": {
+    "monolithic": "HIGH",
+    "small_composable": "MEDIUM",
+    "domain_based": "MEDIUM",
+    "layer_based": "MEDIUM",
+    "workspace_based": "HIGH",
+    "state_per_stack": "LOW"
+  },
+  "detection_method": "lock_file_diff",
+  "affected_resources": ["all_provider_managed_resources"],
+  "requires_aws_credentials": false,
+  "remediation": "terraform init -upgrade && terraform apply"
+}

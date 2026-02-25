@@ -1,0 +1,9 @@
+variable "aws_region" { type = string; default = "us-east-1" }
+variable "environment" { type = string; default = "dev" }
+variable "project_name" { type = string; default = "iac-study" }
+variable "container_image" { type = string; default = "nginx:latest" }
+variable "container_port" { type = number; default = 80 }
+variable "ecs_task_cpu" { type = number; default = 256 }
+variable "ecs_task_memory" { type = number; default = 512 }
+variable "ecs_desired_count" { type = number; default = 2 }
+variable "db_name" { type = string; default = "appdb" }

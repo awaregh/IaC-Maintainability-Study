@@ -1,0 +1,20 @@
+{
+  "variant": "workspace_based",
+  "measured_at": "2026-02-25T07:24:16Z",
+  "source_path": "infra/reference_systems/workspace_based",
+  "metrics": {
+    "total_loc": 564,
+    "resource_blocks": 35,
+    "module_calls": 0,
+    "module_count": 0,
+    "data_blocks": 2,
+    "variable_count": 5,
+    "output_count": 6,
+    "reuse_ratio": 0.0000,
+    "coupling_score": 2.3611,
+    "graph_nodes": 0,
+    "graph_edges": 0,
+    "graph_available": false,
+    "estimated_change_surface": 35
+  }
+}

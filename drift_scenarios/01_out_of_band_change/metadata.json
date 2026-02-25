@@ -1,0 +1,18 @@
+{
+  "scenario_id": "01_out_of_band_change",
+  "name": "Out-of-Band Change",
+  "category": "operational",
+  "severity": "HIGH",
+  "blast_radius": {
+    "monolithic": "HIGH",
+    "small_composable": "LOW",
+    "domain_based": "MEDIUM",
+    "layer_based": "LOW",
+    "workspace_based": "HIGH",
+    "state_per_stack": "LOW"
+  },
+  "detection_method": "terraform_plan",
+  "affected_resources": ["aws_ecs_service"],
+  "requires_aws_credentials": true,
+  "remediation": "terraform apply"
+}
